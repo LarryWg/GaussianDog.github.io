@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-card: white;
+  --color-card-foreground: #171717;
+  --color-muted-foreground: #737373;
+  --color-border: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: #171717;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dog-photo, .dog-preview { transition: opacity 200ms ease; }
+.dog-card[data-ready="true"]:is(:hover, :focus-visible) .dog-preview { opacity: 1; }
+.dog-card[data-ready="true"]:is(:hover, :focus-visible) .dog-photo { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dog-photo, .dog-preview { transition: none; }
+}
