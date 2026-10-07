@@ -16,8 +16,8 @@ body {
 }
 
 .dog-photo, .dog-preview { transition: opacity 200ms ease; }
-.dog-card[data-ready="true"]:is(:hover, :focus-visible) .dog-preview { opacity: 1; }
-.dog-card[data-ready="true"]:is(:hover, :focus-visible) .dog-photo { opacity: 0; }
+.dog-card[data-preview="true"] .dog-preview { opacity: 1; }
+.dog-card[data-preview="true"] .dog-photo { opacity: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .dog-photo, .dog-preview { transition: none; }

@@ -2,9 +2,9 @@
 
 A minimal photo gallery for [GaussianDog](https://github.com/LarryWg/GaussianDog).
 
-Hover over the dog photograph, or focus the card with the Tab key, to see its reconstruction on a white background with a circular black grid. There is no click action or full viewer yet.
+Hover over the dog photograph, or focus the card with the Tab key, to play a looping preview of the dog looking around on a rotating circular black grid. There is no click action or full viewer yet.
 
-The preview is a pre-rendered image of the actual Gaussian reconstruction. The website does not download the research model or require WebGL.
+The preview is a 12-second video rendered from the actual Gaussian reconstruction. Playback pauses when the card is no longer hovered or focused. Reduced-motion preferences show a still frame. The website does not download the research model or require WebGL.
 
 ## Development
 
