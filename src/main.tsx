@@ -25,7 +25,7 @@ function App() {
         >
           <CardContent className="relative aspect-[488/584] overflow-hidden p-0">
             <img
-              className="dog-photo absolute inset-0 h-full w-full object-cover"
+              className="dog-photo absolute inset-0 h-full w-full scale-[1.02] object-cover"
               src={`${import.meta.env.BASE_URL}images/dog-photo.png`}
               alt="Original photograph of a seated black, white, and tan dog"
               width={488}
